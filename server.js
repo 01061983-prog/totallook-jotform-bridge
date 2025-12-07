@@ -25,7 +25,7 @@ app.get("/jotform/clients", async (req, res) => {
     const response = await axios.get(
       `${JOTFORM_BASE_URL}/form/${JOTFORM_FORM_ID}/submissions`,
       {
-        params: { apiKey: JOTFORM_API_KEY, limit: 50, offset: 0 },
+        params: { apiKey: JOTFORM_API_KEY, limit: 1000, offset: 0 },
       }
     );
 
